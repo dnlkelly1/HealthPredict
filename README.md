@@ -1,5 +1,6 @@
 # HealthPredict
 
+<img align="left" src="images/pred.png" width=150>
 Smartphones are becoming increasingly pervasive in almost every aspect of daily life. With smartphones being equipped with multiple sensors, they provide an opportunity to automatically extract information relating to daily life. Information relating to daily life could have major benefits in the area of health informatics. Research shows that there is a need for more objective and accurate means of measuring health status. Hence, this work investigates the use of multi-modal smartphone sensors to measure human behaviour and generate behaviour profiles which can be used to make objective predictions related to health status. 
 
 
