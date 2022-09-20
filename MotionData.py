@@ -34,11 +34,11 @@ class MotionData:
         
         #Remove Questionnaire entries that do not have a enough valid answers
         #(Result1 and Result2 are the SF36 questionnaire summary values for Physical Component Score and Mental component scores.
-        #They are computed using individual questions Q1-Q37
+        #They are computed using individual questions Q1-Q36
         #To ensure that Result1 and Result2 are valid, we first check that enough of the individual questions have been answered
         #This is done by selecting just the individual questions (qs.iloc[:,3:39]) and count how many are not -1
         #If enought are valid (we set 18 as an arbitrary threshold), then we keep that record
-        qs = qs[(qs.iloc[:,3:39] > 0).sum(axis=1) > 18]
+        qs = qs[(qs.iloc[:,3:39] >= 0).sum(axis=1) > 32]
         
         #If a user has multiple questionnaire entries...keep only the most recent (tail) one
         qs = qs.groupby(by='user').tail(1)

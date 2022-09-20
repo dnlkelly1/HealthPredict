@@ -17,41 +17,41 @@ Rotational velocity relative to gravity is also computed using $\overline{G}=G \
 ##### During a given hour, features f2-f27 are calculated during periods when the phone is not stationary. If the phone was stationary for the entire hour, f2-f29 will be NAN
 * f2: Mean of $A_m$
 * f3: Variance of $A_m$
-* f4: Kurtosis of $A_m$
-* f5: Skewness of $A_m$
+* f4:* Kurtosis of $A_m$
+* f5:* Skewness of $A_m$
 * f6: Min of $A_m$
-* f7: Max of $A_m$
+* f7:* Max of $A_m$
 * f8: Mean of $G_m$
-* f9: Variance of $G_m$
-* f10: Mean of $A^h$ 
-* f11: Variance of $A^h$
-* f12: Mean of $A^v$ 
+* f9:* Variance of $G_m$
+* f10:* Mean of $A^h$ 
+* f11:* Variance of $A^h$
+* f12:* Mean of $A^v$ 
 * f13: Variance of $A^v$
 * f14: Mean of $G^h$ 
 * f15: Variance of $G^h$
 * f16: Mean of $G^v$ 
 * f17: Variance of $G^v$
-* f18: Correlation between $A^v$ and $A_m$
-* f19: Correlation between $A^v$ and $A^h$
-* f20: Inter Quartile Range $A_m$
+* f18:* Correlation between $A^v$ and $A_m$
+* f19:* Correlation between $A^v$ and $A^h$
+* f20:* Inter Quartile Range $A_m$
 * f21: Inter Quartile Range $G^v$
-* f22: Inter Quartile Range $G^h$
-* f23: Largest Rate of change from all zero crossings in  $A^v$
-* f24: Mean orientation rate of change ($\theta$ and $\phi$)
-* f25: Duration in seconds that device was moving during the 1 hour window
+* f22:* Inter Quartile Range $G^h$
+* f23:* Largest Rate of change from all zero crossings in  $A^v$
+* f24:* Mean orientation rate of change ($\theta$ and $\phi$)
+* f25:* Duration in seconds that device was moving during the 1 hour window
 
-* f26: FFT frequency 1 computed from $A^v$
-* f27: FFT frequency 2 computed from $A^v$
-* f28: FFT frequency 3 computed from $A^v$
+* f26:* FFT frequency 1 computed from $A^v$
+* f27:* FFT frequency 2 computed from $A^v$
+* f28:* FFT frequency 3 computed from $A^v$
 
 ##### For hour h, there will be periods of inactivity where no motion is detected. The next 4 features are statistical summaries of the periods of inactivity
 ##### During a given hour, features f29-f33 are calculated on the durations of peiods of inactivity
 
-* f29: Percentage of time the phone was in a "moving" state (duration phone was not stationary). 1 = phone active for full hour, 0 = phone stationary for full hour
-* f30: Variance of the durations of all periods of inactivity
-* f31: Mean of the durations of all periods of inactivity (for an hour where no movement occured, and the sensor was ON for the entire hour, this value will be 3600 seconds)
-* f32: Inter Quartile Range (IQR) of the durations of all periods of inactivity
-* f33: Variance/IQR ratio
+* f29:* Percentage of time the phone was in a "moving" state (duration phone was not stationary). 1 = phone active for full hour, 0 = phone stationary for full hour
+* f30:* Variance of the durations of all periods of inactivity
+* f31:* Mean of the durations of all periods of inactivity (for an hour where no movement occured, and the sensor was ON for the entire hour, this value will be 3600 seconds)
+* f32:* Inter Quartile Range (IQR) of the durations of all periods of inactivity
+* f33:* Variance/IQR ratio
 
 * f34: NOT USED
 * f35: NOT USED
